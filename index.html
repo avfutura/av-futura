@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AV Futura - Vanitha Baskaran</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f8f9fa;
+      color: #333;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      padding: 40px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+
+    .logo img {
+      height: 60px;
+      margin-right: 15px;
+    }
+
+    .logo-text {
+      font-size: 36px;
+      font-weight: bold;
+    }
+
+    .logo-text .blue {
+      color: #2563eb;
+    }
+
+    .logo-text .orange {
+      color: #f97316;
+    }
+
+    .info {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .info h1 {
+      margin: 0;
+      font-size: 26px;
+      color: #1e3a8a;
+    }
+
+    .info p {
+      margin: 5px 0;
+      font-size: 16px;
+    }
+
+    .highlight {
+      color: #2563eb;
+      font-weight: 500;
+    }
+
+    .services {
+      background: #f1f5f9;
+      border-radius: 8px;
+      padding: 30px;
+    }
+
+    .services h2 {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #111827;
+    }
+
+    .services ul {
+      list-style: none;
+      padding: 0;
+      font-size: 18px;
+    }
+
+    .services li {
+      margin: 12px 0;
+      padding: 12px;
+      background: #fff;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      transition: transform 0.2s;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .services li:hover {
+      transform: translateY(-2px);
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #6b7280;
+    }
+
+    .arrow {
+      transition: transform 0.3s ease;
+    }
+
+    .arrow.down {
+      transform: rotate(180deg);
+    }
+
+    .collapsible-content {
+      display: none;
+      margin-top: 10px;
+      padding: 15px;
+      background: #e0e7ff;
+      border-radius: 8px;
+    }
+
+    .collapsible-content p {
+      font-size: 16px;
+    }
+
+    .collapsible-content ul {
+      list-style: none;
+      padding: 0;
+      font-size: 16px;
+    }
+
+    .collapsible-content li {
+      margin: 6px 0;
+      padding: 6px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="logo">
+      <img src="avfutura-logo.png" alt="AV Futura Logo" />
+      <div class="logo-text">
+        <span class="blue">AV</span> <span class="orange">FUTURA</span>
+      </div>
+    </div>
+
+    <div class="info">
+      <p>Email: <a href="mailto:vanitha@avfutura.com">vanitha@avfutura.com</a></p>
+      <p>Website: <a href="https://www.avfutura.com" target="_blank">www.avfutura.com</a></p>
+      <p>Location: [chennai/vridhachalam]</p>
+    </div>
+
+    <div class="services">
+      <h2>Our Services</h2>
+      <ul>
+        <li id="itTraining">IT Training <span class="arrow">&#9660;</span></li>
+        <div id="itTrainingContent" class="collapsible-content">
+          <p>🚀 <strong>AV Futura – Premium IT Training Services</strong><br>
+          Master the future with expert-led IT Training from AV Futura!</p>
+          <ul>
+            <li>✅ Industry-Relevant Courses</li>
+            <li>✅ Hands-on Practical Training</li>
+            <li>✅ Flexible Online & Offline Sessions</li>
+            <li>✅ Real-Time Projects & Case Studies</li>
+            <li>✅ Interview & Resume Preparation</li>
+            <li>✅ Certification on Completion</li>
+            <li>✅ Affordable Pricing with High ROI</li>
+          </ul>
+        </div>
+
+        <li id="softwareDevelopment">Software Development <span class="arrow">&#9660;</span></li>
+        <div id="softwareDevelopmentContent" class="collapsible-content">
+          <p>💻 <strong>AV Futura – Expert Software Development Services</strong><br>
+          Turn your ideas into powerful digital solutions with AV Futura.</p>
+          <ul>
+            <li>✅ Custom Web & App Development</li>
+            <li>✅ Robust & Scalable Solutions</li>
+            <li>✅ Agile Development Approach</li>
+            <li>✅ Experienced Development Team</li>
+            <li>✅ UI/UX Focused Design</li>
+            <li>✅ End-to-End Project Handling</li>
+            <li>✅ On-Time Delivery</li>
+            <li>✅ Post-Deployment Support</li>
+          </ul>
+        </div>
+
+        <li id="itConsultation">IT Consultation <span class="arrow">&#9660;</span></li>
+        <div id="itConsultationContent" class="collapsible-content">
+          <p>🧠 <strong>AV Futura – Professional IT Consultation Services</strong><br>
+          Empower your business with strategic IT insights tailored to your goals.</p>
+          <ul>
+            <li>✅ Strategic Technology Planning</li>
+            <li>✅ Infrastructure & Cloud Guidance</li>
+            <li>✅ Digital Transformation Roadmaps</li>
+            <li>✅ Cybersecurity & Compliance Advisory</li>
+            <li>✅ Process Optimization Solutions</li>
+            <li>✅ Startup & Enterprise IT Consulting</li>
+            <li>✅ Cost-Effective and Scalable Plans</li>
+          </ul>
+        </div>
+
+        <li id="softSkillsCoaching">Soft Skills Coaching <span class="arrow">&#9660;</span></li>
+        <div id="softSkillsCoachingContent" class="collapsible-content">
+          <p>🎤 <strong>AV Futura – Premium Soft Skills Coaching</strong><br>
+          Enhance your growth with our expert-led soft skills programs.</p>
+          <ul>
+            <li>✅ Effective Communication Skills</li>
+            <li>✅ Public Speaking & Presentation Mastery</li>
+            <li>✅ Leadership & Team Building</li>
+            <li>✅ Emotional Intelligence & Confidence Building</li>
+            <li>✅ Time Management & Goal Setting</li>
+            <li>✅ Interview & Group Discussion Skills</li>
+            <li>✅ Customized Corporate & Student Programs</li>
+            <li>✅ Interactive Sessions with Real-Life Scenarios</li>
+          </ul>
+        </div>
+      </ul>
+    </div>
+
+    <div class="footer">
+      &copy; 2025 AV Futura. All rights reserved.
+    </div>
+  </div>
+
+  <script>
+    function toggleContent(content, arrow) {
+      if (content.style.display === "block") {
+        content.style.display = "none";
+        arrow.classList.remove("down");
+      } else {
+        content.style.display = "block";
+        arrow.classList.add("down");
+      }
+    }
+
+    document.getElementById("itTraining").addEventListener("click", function() {
+      toggleContent(document.getElementById("itTrainingContent"), this.querySelector(".arrow"));
+    });
+
+    document.getElementById("softwareDevelopment").addEventListener("click", function() {
+      toggleContent(document.getElementById("softwareDevelopmentContent"), this.querySelector(".arrow"));
+    });
+
+    document.getElementById("itConsultation").addEventListener("click", function() {
+      toggleContent(document.getElementById("itConsultationContent"), this.querySelector(".arrow"));
+    });
+
+    document.getElementById("softSkillsCoaching").addEventListener("click", function() {
+      toggleContent(document.getElementById("softSkillsCoachingContent"), this.querySelector(".arrow"));
+    });
+  </script>
+
+</body>
+</html>
