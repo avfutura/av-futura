@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Free Fire 1v1 Challenge | HeAdHunteR</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    body {
+      overflow-x: hidden;
+      min-height: 100vh;
+      background: linear-gradient(270deg, #ff00c8, #00ffe7, #00bfff);
+      background-size: 600% 600%;
+      animation: rgbFlow 20s ease infinite;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    @keyframes rgbFlow {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    .container {
+      max-width: 1200px;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      border: 2px solid #00ffff;
+      border-radius: 15px;
+      box-shadow: 0 0 25px #00ffff88;
+      display: flex;
+      flex-wrap: wrap;
+      overflow: hidden;
+      z-index: 2;
+    }
+
+    .profile {
+      flex: 1 1 45%;
+      background: #000;
+    }
+
+    .profile img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .details {
+      flex: 1 1 55%;
+      padding: 2rem;
+      color: #fff;
+    }
+
+    .details h1 {
+      font-size: 2.5rem;
+      color: #00ffff;
+      margin-bottom: 1rem;
+      text-shadow: 0 0 10px #00ffff;
+    }
+
+    .details p {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+      color: #ccc;
+    }
+
+    .cta a {
+      background: #00ffff;
+      color: #000;
+      text-decoration: none;
+      padding: 14px 30px;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: 0.3s ease;
+      font-size: 1.1rem;
+      box-shadow: 0 0 10px #00ffff, 0 0 30px #00ffff55;
+      display: inline-block;
+    }
+
+    .cta a:hover {
+      background: #00cccc;
+      box-shadow: 0 0 15px #00ffff, 0 0 40px #00ffff77;
+    }
+
+    .rotate-warning {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.95);
+      color: #00ffff;
+      z-index: 9999;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .rotate-warning img {
+      width: 100px;
+      margin-bottom: 1rem;
+    }
+
+    @media screen and (max-width: 768px) and (orientation: portrait) {
+      .container {
+        filter: blur(6px);
+        pointer-events: none;
+        user-select: none;
+      }
+
+      .rotate-warning {
+        display: flex;
+      }
+    }
+
+    @media screen and (min-width: 769px) {
+      .rotate-warning {
+        display: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="rotate-warning">
+    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExd3E1bHZmYjJsaTByNGI3Z3k2em12ejE0MGhjdnh4bTNoMTAwODJ3ciZlcD12MV9naWZzX3NlYXJjaCZjdD1n/r8kYiy8UkjfTfaY9tE/giphy.gif" alt="Rotate Device">
+    <h2>Please rotate your device to landscape mode 📱</h2>
+  </div>
+
+  <div class="container">
+    <div class="profile">
+      <img src="account-profile.jpg" alt="Free Fire Account"/>
+    </div>
+    <div class="details">
+      <h1>HeAdHunteR - 1v1 Challenge</h1>
+      <p> Level 61 • Heroic Emblem • 538+ Days Experience<br>
+          Pure skill UMP, AWM, M1887<br>
+          Sniper player • Rusher • 2 GB ram</p>
+      <p>Think you're the best? Prove it. Face me in a 1v1 Free Fire battle and show your skills. Only true warriors accepted. 💥</p>
+      <div class="cta">
+        <a href="https://api.whatsapp.com/send?phone=919600003857" target="_blank">💥 Challenge Me on WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
