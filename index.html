@@ -2,261 +2,142 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>AV Futura - Vanitha Baskaran</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #f8f9fa;
-      color: #333;
-    }
-
-    .container {
-      max-width: 960px;
-      margin: 40px auto;
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-      padding: 40px;
-    }
-
-    .logo {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 30px;
-    }
-
-    .logo img {
-      height: 60px;
-      margin-right: 15px;
-    }
-
-    .logo-text {
-      font-size: 36px;
-      font-weight: bold;
-    }
-
-    .logo-text .blue {
-      color: #2563eb;
-    }
-
-    .logo-text .orange {
-      color: #f97316;
-    }
-
-    .info {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-
-    .info h1 {
-      margin: 0;
-      font-size: 26px;
-      color: #1e3a8a;
-    }
-
-    .info p {
-      margin: 5px 0;
-      font-size: 16px;
-    }
-
-    .highlight {
-      color: #2563eb;
-      font-weight: 500;
-    }
-
-    .services {
-      background: #f1f5f9;
-      border-radius: 8px;
-      padding: 30px;
-    }
-
-    .services h2 {
-      text-align: center;
-      font-size: 24px;
-      margin-bottom: 20px;
-      color: #111827;
-    }
-
-    .services ul {
-      list-style: none;
-      padding: 0;
-      font-size: 18px;
-    }
-
-    .services li {
-      margin: 12px 0;
-      padding: 12px;
-      background: #fff;
-      border-radius: 6px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-      transition: transform 0.2s;
-      cursor: pointer;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .services li:hover {
-      transform: translateY(-2px);
-    }
-
-    .footer {
-      text-align: center;
-      margin-top: 40px;
-      font-size: 14px;
-      color: #6b7280;
-    }
-
-    .arrow {
-      transition: transform 0.3s ease;
-    }
-
-    .arrow.down {
-      transform: rotate(180deg);
-    }
-
-    .collapsible-content {
-      display: none;
-      margin-top: 10px;
-      padding: 15px;
-      background: #e0e7ff;
-      border-radius: 8px;
-    }
-
-    .collapsible-content p {
-      font-size: 16px;
-    }
-
-    .collapsible-content ul {
-      list-style: none;
-      padding: 0;
-      font-size: 16px;
-    }
-
-    .collapsible-content li {
-      margin: 6px 0;
-      padding: 6px;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AV Futura | IT Training & Web Services</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
 
-  <div class="container">
-    <div class="logo">
-      <img src="avfutura-logo.png" alt="AV Futura Logo" />
-      <div class="logo-text">
-        <span class="blue">AV</span> <span class="orange">FUTURA</span>
+<body class="bg-white text-gray-800">
+
+  <!-- Header with Logo -->
+  <header class="bg-orange-500 text-white shadow">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <img src="avfutura-logo.png" alt="AV Futura Logo" class="h-12 w-auto">
+        <h1 class="text-2xl font-bold">AV Futura</h1>
+      </div>
+      <nav>
+        <ul class="flex space-x-6 text-lg">
+          <li><a href="#services" class="hover:text-teal-200">Services</a></li>
+          <li><a href="#about" class="hover:text-teal-200">About</a></li>
+          <li><a href="#vision-mission" class="hover:text-teal-200">Vision & Mission</a></li>
+          <li><a href="#contact" class="hover:text-teal-200">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-orange-400 to-blue-900 text-white text-center py-20">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-3xl font-bold mb-4">Empowering the Change Makers with Future Tech...</h2>
+      <p class="text-xl">Training, Development & IT Consultation for the next generation</p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <h3 class="text-3xl font-semibold text-center mb-12 text-orange-600">Our Services</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+        <div class="bg-gray-100 p-6 rounded-lg shadow text-center border-t-4 border-orange-400">
+          <h4 class="text-xl font-bold mb-3 text-blue-900">IT Trainings</h4>
+          <p>Hands-on training in Python, Web Development, Data Science, and more tailored for students and professionals.</p>
+        </div>
+
+        <div class="bg-gray-100 p-6 rounded-lg shadow text-center border-t-4 border-orange-400">
+          <h4 class="text-xl font-bold mb-3 text-blue-900">Web Development</h4>
+          <p>Custom websites and apps using modern stacks like React, Django, and Node.js to meet your business goals.</p>
+        </div>
+
+        <div class="bg-gray-100 p-6 rounded-lg shadow text-center border-t-4 border-orange-400">
+          <h4 class="text-xl font-bold mb-3 text-blue-900">Consultations</h4>
+          <p>Strategic IT guidance, digital transformation, and technology planning tailored for growth and impact.</p>
+        </div>
+
+        <div class="bg-gray-100 p-6 rounded-lg shadow text-center border-t-4 border-orange-400">
+          <h4 class="text-xl font-bold mb-3 text-blue-900">Soft Skills</h4>
+          <p>Enhance communication, leadership, and teamwork through curated workshops designed for workplace excellence.</p>
+        </div>
+
       </div>
     </div>
+  </section>
 
-    <div class="info">
-      <p>Email: <a href="mailto:vanitha@avfutura.com">vanitha@avfutura.com</a></p>
-      <p>Website: <a href="https://www.avfutura.com" target="_blank">www.avfutura.com</a></p>
-      <p>Location: [chennai/vridhachalam]</p>
+  <!-- About Section -->
+  <section id="about" class="py-16 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h3 class="text-3xl font-semibold mb-8 text-orange-600">About AV Futura</h3>
+      <p class="text-lg text-gray-700">
+        AV Futura is a forward-thinking IT solutions provider dedicated to upskilling the youth and empowering local businesses through training, technology, and strategic consulting.
+        We specialize in creating a tech-savvy ecosystem in Tier 2 and Tier 3 cities by delivering hands-on programs and building digital solutions for the real world.
+      </p>
     </div>
+  </section>
 
-    <div class="services">
-      <h2>Our Services</h2>
-      <ul>
-        <li id="itTraining">IT Training <span class="arrow">&#9660;</span></li>
-        <div id="itTrainingContent" class="collapsible-content">
-          <p>🚀 <strong>AV Futura – Premium IT Training Services</strong><br>
-          Master the future with expert-led IT Training from AV Futura!</p>
-          <ul>
-            <li>✅ Industry-Relevant Courses</li>
-            <li>✅ Hands-on Practical Training</li>
-            <li>✅ Flexible Online & Offline Sessions</li>
-            <li>✅ Real-Time Projects & Case Studies</li>
-            <li>✅ Interview & Resume Preparation</li>
-            <li>✅ Certification on Completion</li>
-            <li>✅ Affordable Pricing with High ROI</li>
-          </ul>
-        </div>
-
-        <li id="softwareDevelopment">Software Development <span class="arrow">&#9660;</span></li>
-        <div id="softwareDevelopmentContent" class="collapsible-content">
-          <p>💻 <strong>AV Futura – Expert Software Development Services</strong><br>
-          Turn your ideas into powerful digital solutions with AV Futura.</p>
-          <ul>
-            <li>✅ Custom Web & App Development</li>
-            <li>✅ Robust & Scalable Solutions</li>
-            <li>✅ Agile Development Approach</li>
-            <li>✅ Experienced Development Team</li>
-            <li>✅ UI/UX Focused Design</li>
-            <li>✅ End-to-End Project Handling</li>
-            <li>✅ On-Time Delivery</li>
-            <li>✅ Post-Deployment Support</li>
-          </ul>
-        </div>
-
-        <li id="itConsultation">IT Consultation <span class="arrow">&#9660;</span></li>
-        <div id="itConsultationContent" class="collapsible-content">
-          <p>🧠 <strong>AV Futura – Professional IT Consultation Services</strong><br>
-          Empower your business with strategic IT insights tailored to your goals.</p>
-          <ul>
-            <li>✅ Strategic Technology Planning</li>
-            <li>✅ Infrastructure & Cloud Guidance</li>
-            <li>✅ Digital Transformation Roadmaps</li>
-            <li>✅ Cybersecurity & Compliance Advisory</li>
-            <li>✅ Process Optimization Solutions</li>
-            <li>✅ Startup & Enterprise IT Consulting</li>
-            <li>✅ Cost-Effective and Scalable Plans</li>
-          </ul>
-        </div>
-
-        <li id="softSkillsCoaching">Soft Skills Coaching <span class="arrow">&#9660;</span></li>
-        <div id="softSkillsCoachingContent" class="collapsible-content">
-          <p>🎤 <strong>AV Futura – Premium Soft Skills Coaching</strong><br>
-          Enhance your growth with our expert-led soft skills programs.</p>
-          <ul>
-            <li>✅ Effective Communication Skills</li>
-            <li>✅ Public Speaking & Presentation Mastery</li>
-            <li>✅ Leadership & Team Building</li>
-            <li>✅ Emotional Intelligence & Confidence Building</li>
-            <li>✅ Time Management & Goal Setting</li>
-            <li>✅ Interview & Group Discussion Skills</li>
-            <li>✅ Customized Corporate & Student Programs</li>
-            <li>✅ Interactive Sessions with Real-Life Scenarios</li>
-          </ul>
-        </div>
-      </ul>
+  <!-- Vision and Mission Section -->
+  <section id="vision-mission" class="py-16 bg-white">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <h3 class="text-3xl font-semibold mb-8 text-orange-600">Our Vision & Mission</h3>
+      
+      <div class="mb-10">
+        <h4 class="text-xl font-bold text-blue-900 mb-2">Our Vision</h4>
+        <p class="text-lg text-gray-700">
+          To ignite potential in every learner by providing equitable access to digital skills, shaping a future-ready generation in every corner of India.
+        </p>
+      </div>
+      
+      <div>
+        <h4 class="text-xl font-bold text-blue-900 mb-2">Our Mission</h4>
+        <p class="text-lg text-gray-700">
+          To deliver high-quality IT training, web solutions, and career-building soft skills in Tier 2 and Tier 3 towns through accessible and affordable programs.
+        </p>
+      </div>
     </div>
+  </section>
 
-    <div class="footer">
-      &copy; 2025 AV Futura. All rights reserved.
-    </div>
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 bg-gray-100">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <h3 class="text-3xl font-semibold mb-8 text-orange-600">Contact Us</h3>
+    <p class="text-lg text-gray-700 mb-6">
+      Have questions or want to work with us? Reach out!
+    </p>
+    <form id="contactForm" action="send-email.php" method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+      <input type="text" name="name" placeholder="Name" class="p-4 border rounded" required />
+      <input type="email" name="email" placeholder="Email" class="p-4 border rounded" required />
+      <textarea name="message" placeholder="Your Message" class="p-4 border rounded md:col-span-2" rows="4" required></textarea>
+      <button type="submit" class="bg-orange-500 text-white px-6 py-3 rounded-md hover:bg-orange-600 md:col-span-2">Send Message</button>
+    </form>
+
+    <!-- Response Message Display -->
+    <div id="formMessage" class="text-center text-green-600 mt-4"></div>
   </div>
+</section>
 
-  <script>
-    function toggleContent(content, arrow) {
-      if (content.style.display === "block") {
-        content.style.display = "none";
-        arrow.classList.remove("down");
-      } else {
-        content.style.display = "block";
-        arrow.classList.add("down");
-      }
-    }
+<!-- Add script just before closing body -->
+<script>
+document.getElementById("contactForm").addEventListener("submit", async function(e) {
+  e.preventDefault();
+  const form = e.target;
+  const formData = new FormData(form);
 
-    document.getElementById("itTraining").addEventListener("click", function() {
-      toggleContent(document.getElementById("itTrainingContent"), this.querySelector(".arrow"));
+  try {
+    const response = await fetch("send-email.php", {
+      method: "POST",
+      body: formData
     });
 
-    document.getElementById("softwareDevelopment").addEventListener("click", function() {
-      toggleContent(document.getElementById("softwareDevelopmentContent"), this.querySelector(".arrow"));
-    });
-
-    document.getElementById("itConsultation").addEventListener("click", function() {
-      toggleContent(document.getElementById("itConsultationContent"), this.querySelector(".arrow"));
-    });
-
-    document.getElementById("softSkillsCoaching").addEventListener("click", function() {
-      toggleContent(document.getElementById("softSkillsCoachingContent"), this.querySelector(".arrow"));
-    });
-  </script>
+    const data = await response.text();
+    document.getElementById("formMessage").textContent = data;
+    form.reset();
+  } catch (error) {
+    console.error("Error details:", error);
+    document.getElementById("formMessage").textContent = "Something went wrong!";
+  }
+});
+</script>
 
 </body>
 </html>
